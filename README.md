@@ -9,8 +9,6 @@ chromeのChatWork用拡張機能です。
 隠したい要素をjQueryセレクタで指定すると消えます。
 ![リンクテキスト](http://i.imgur.com/YtfOoTG.png)
 
-https://github.com/YuSakamoto/chatwork-template
-↑
-これと併せて使うとスッキリ！
+https://github.com/YuSakamoto/chatwork-template これと併せて使うとスッキリ！
 ![リンクテキスト](http://i.imgur.com/rVt64sL.png)
 
