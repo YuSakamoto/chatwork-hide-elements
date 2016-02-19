@@ -18,6 +18,14 @@ function save_options() {
       console.log("Runtime error.");
     }
 	});
+
+	var pinContact = $("#pin-contact").is(':checked');
+	chrome.storage.sync.set({"pinContact": pinContact}, function() {
+		console.log("pinContact: " + pinContact);
+		if (chrome.runtime.error) {
+			console.log("Runtime error.");
+		}
+	});
 }
 
 function restore_options() {
@@ -29,6 +37,10 @@ function restore_options() {
 			$(".add").before('<input type="text" class="form-control" style="margin-bottom:5px;" value="' + value + '" /><br>');
 		});
 	});
+
+    chrome.storage.sync.get("pinContact", function(model) {
+        $("#pin-contact").prop('checked', model.pinContact);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', restore_options);
