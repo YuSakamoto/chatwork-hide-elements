@@ -36,7 +36,7 @@
                     }
                     others.push( $(this) );
                 });
-                
+
                 if (contacts.length < 1) { return; }
 
                 $("#_roomListItems").empty();
@@ -49,5 +49,5 @@
                 });
             } , 1000);
         }
-	});        
+	});
 }());
