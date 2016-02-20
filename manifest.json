@@ -33,6 +33,7 @@
     ],
     "web_accessible_resources": [
         "scripts/main.js",
+        "scripts/chatext.js",
         "scripts/jquery-2.1.4.min.js",
         "scripts/bootstrap.min.js",
         "styles/bootstrap.min.css",
