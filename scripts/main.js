@@ -50,4 +50,12 @@
             } , 1000);
         }
 	});
+
+    injectJsFile("chatext.js");
 }());
+
+function injectJsFile(file_name) {
+    var script = document.createElement("script");
+    script.src = chrome.extension.getURL("scripts/" + file_name);
+    (document.documentElement).appendChild(script);
+}
